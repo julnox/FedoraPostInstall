@@ -12,14 +12,13 @@ mkdir /home/$USER/Downloads/programs
 cd /home/$USER/Downloads/programs
 
 wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
-wget -c https://repo.mysql.com//mysql80-community-release-fc35-2.noarch.rpm
 
 sudo dnf install *.rpm
 
-
 ## Installing Repositories Programs
-sudo dnf install libreoffice akmod-nvidia gthumb vlc rhythmbox virtualbox torbrowser-launcher gpick piper gparted gnome-tweaks qbittorrent steam lutris easyeffects octave drawing gimp ffmpegthumbnailer python3 gcc g++ make cmake java-11-openjdk java-11-openjdk-devel neofetch ufw zsh
+sudo dnf install libreoffice akmod-nvidia gthumb vlc rhythmbox virtualbox torbrowser-launcher gpick piper gparted gnome-tweaks qbittorrent steam lutris easyeffects octave drawing gimp ffmpegthumbnailer python3 gcc g++ make cmake java-11-openjdk java-11-openjdk-devel neofetch ufw zsh mariadb-server
 sudo systemctl enable ufw
+sudo systemctl disable mariadb
 
 ## Installing Flatpak Programs
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
