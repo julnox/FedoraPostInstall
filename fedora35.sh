@@ -16,7 +16,7 @@ wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.r
 sudo dnf install *.rpm
 
 ## Installing Repositories Programs
-sudo dnf install libreoffice akmod-nvidia gthumb rhythmbox torbrowser-launcher gpick piper gparted gnome-tweaks qbittorrent steam lutris easyeffects octave drawing gimp python3 gcc g++ make cmake java-11-openjdk java-11-openjdk-devel neofetch ufw zsh mariadb-server python3-pip util-linux-user deja-dup;
+sudo dnf install libreoffice akmod-nvidia gthumb rhythmbox torbrowser-launcher gpick piper gparted gnome-tweaks qbittorrent steam lutris easyeffects octave drawing gimp python3 gcc g++ make cmake java-11-openjdk java-11-openjdk-devel neofetch ufw zsh mariadb-server python3-pip util-linux-user deja-dup gnome-extensions-app;
 sudo systemctl enable ufw;
 sudo systemctl disable mariadb;
 
